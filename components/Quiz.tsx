@@ -349,6 +349,21 @@ export default function Quiz() {
             ))}
           </div>
         </div>
+
+        {/* Footer */}
+        <footer className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t-2 border-green-200">
+          <div className="text-center">
+            <p className="text-sm sm:text-base text-gray-600 mb-2">
+              Desarrollado por{' '}
+              <span className="font-bold bg-gradient-to-r from-green-600 to-emerald-600 text-transparent bg-clip-text">
+                stegendev
+              </span>
+            </p>
+            <p className="text-xs sm:text-sm text-gray-500">
+              © {new Date().getFullYear()} - Sistema de Repaso de Redes y Telecomunicaciones
+            </p>
+          </div>
+        </footer>
       </div>
 
       <style jsx>{`
