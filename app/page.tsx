@@ -12,17 +12,11 @@ export default function Home() {
             </div>
           </div>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-medium">
-            Sistema de estudio para examen de Administración de Redes de Computadores
+            Sistema de estudio para examen de Administración de Redes y Telecomunicaciones
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-2 sm:gap-3">
             <span className="px-3 sm:px-4 py-1.5 bg-green-100 text-green-800 rounded-full text-sm sm:text-base font-semibold shadow-sm">
               ✨ 181 Preguntas
-            </span>
-            <span className="px-3 sm:px-4 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-sm sm:text-base font-semibold shadow-sm">
-              📱 Responsive
-            </span>
-            <span className="px-3 sm:px-4 py-1.5 bg-teal-100 text-teal-800 rounded-full text-sm sm:text-base font-semibold shadow-sm">
-              🎯 Interactivo
             </span>
           </div>
         </div>

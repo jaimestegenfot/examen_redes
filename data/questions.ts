@@ -52,12 +52,12 @@ export const questions: Question[] = [
     id: 4,
     question: "¿Por qué se considera compleja la administración de una red de datos?",
     options: [
-      "Porque solo maneja datos",
       "Porque comprende una mezcla de servicios como voz, video y datos; interconexión de diferentes tipos de redes; múltiples medios de comunicación; diversos protocolos; muchos sistemas operativos y arquitecturas",
+      "Porque solo maneja datos",
       "Porque requiere mucho dinero",
       "Porque solo funciona con Windows"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "La administración es compleja debido a la mezcla de servicios (voz, video, datos), interconexión de diferentes tipos de redes (LAN, MAN, WAN), múltiples medios, protocolos, sistemas operativos y arquitecturas.",
     category: "Conceptos Generales"
   },
@@ -66,11 +66,11 @@ export const questions: Question[] = [
     question: "¿Qué son los 'Objetos' en la administración de redes?",
     options: [
       "Los programas que coleccionan información",
-      "Los elementos de más bajo nivel que constituyen los aparatos administrados",
       "El administrador central",
+      "Los elementos de más bajo nivel que constituyen los aparatos administrados",
       "Los protocolos de comunicación"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Los objetos son los elementos de más bajo nivel y constituyen los aparatos administrados en la red.",
     category: "Elementos de Administración"
   },
@@ -79,11 +79,11 @@ export const questions: Question[] = [
     question: "¿Qué es un 'Agente' en la administración de redes?",
     options: [
       "Un dispositivo físico de red",
-      "Un programa o conjunto de programas que coleccionan información de administración del sistema en un nodo",
       "El administrador central",
-      "Un protocolo de seguridad"
+      "Un protocolo de seguridad",
+      "Un programa o conjunto de programas que coleccionan información de administración del sistema en un nodo"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Los agentes son programas que coleccionan información de administración del sistema en un nodo o elemento de la red y transmiten información al administrador central.",
     category: "Elementos de Administración"
   },
@@ -91,12 +91,12 @@ export const questions: Question[] = [
     id: 7,
     question: "¿Qué información transmite el agente al administrador central?",
     options: [
-      "Solo datos de diagnóstico",
       "Notificación de problemas, datos de diagnóstico, identificador del nodo y características del nodo",
+      "Solo datos de diagnóstico",
       "Solo el identificador del nodo",
       "Solo las características del nodo"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "El agente transmite información sobre notificación de problemas, datos de diagnóstico, identificador del nodo y características del nodo.",
     category: "Elementos de Administración"
   },
@@ -105,11 +105,11 @@ export const questions: Question[] = [
     question: "¿Qué es el 'Administrador del Sistema'?",
     options: [
       "Una persona física",
-      "Un conjunto de programas ubicados en un punto central",
       "Un dispositivo de red",
-      "Un protocolo de comunicación"
+      "Un protocolo de comunicación",
+      "Un conjunto de programas ubicados en un punto central"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "El administrador del sistema es un conjunto de programas ubicados en un punto central al cual se dirigen los mensajes que requieren acción o que contienen información solicitada.",
     category: "Elementos de Administración"
   },
@@ -118,11 +118,11 @@ export const questions: Question[] = [
     question: "Según ITU y OSI, ¿cómo se define la administración de redes?",
     options: [
       "Solo la configuración de dispositivos",
-      "La suma total de todas las políticas y procedimientos que intervienen en la planeación, configuración, control y monitoreo de los elementos de una red",
       "Solo el monitoreo de la red",
+      "La suma total de todas las políticas y procedimientos que intervienen en la planeación, configuración, control y monitoreo de los elementos de una red",
       "Solo la seguridad de la red"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "La administración de redes es la suma total de todas las políticas y procedimientos que intervienen en la planeación, configuración, control y monitoreo de los elementos de una red para asegurar el eficiente y efectivo empleo de sus recursos.",
     category: "Definiciones ITU/OSI"
   },
@@ -130,12 +130,12 @@ export const questions: Question[] = [
     id: 10,
     question: "¿Cuáles son las 3 dimensiones en la administración de redes según ITU y OSI?",
     options: [
-      "Física, lógica y virtual",
       "Funcional, temporal y del escenario",
+      "Física, lógica y virtual",
       "Hardware, software y protocolos",
       "LAN, MAN y WAN"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Las tres dimensiones son: Funcional (asignación de tareas por áreas funcionales), Temporal (fases cíclicas de planeación, implementación y operación) y del Escenario (escenarios adicionales).",
     category: "Definiciones ITU/OSI"
   },
@@ -144,11 +144,11 @@ export const questions: Question[] = [
     question: "¿Qué significa ITU?",
     options: [
       "International Technology Union",
-      "Unión Internacional de Telecomunicaciones",
       "Internet Technology Unit",
-      "Information Technology Unit"
+      "Information Technology Unit",
+      "Unión Internacional de Telecomunicaciones"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "ITU significa Unión Internacional de Telecomunicaciones (UIT en español), que produce recomendaciones y normas para redes de telecomunicaciones.",
     category: "Definiciones ITU/OSI"
   },
@@ -157,11 +157,11 @@ export const questions: Question[] = [
     question: "¿Qué significa OSI?",
     options: [
       "Operating System Interface",
-      "Open System Interconnection (Modelo de interconexión de sistemas abiertos)",
       "Optical System Integration",
+      "Open System Interconnection (Modelo de interconexión de sistemas abiertos)",
       "Online System Integration"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "OSI significa Open System Interconnection, es la propuesta de ISO para estandarizar la interconexión de sistemas abiertos.",
     category: "Definiciones ITU/OSI"
   },
@@ -170,12 +170,12 @@ export const questions: Question[] = [
     id: 13,
     question: "¿Cuáles son las áreas funcionales de administración de redes según ITU/OSI?",
     options: [
-      "Solo configuración y seguridad",
       "Configuración, Rendimiento, Fallas, Contabilidad y Seguridad",
+      "Solo configuración y seguridad",
       "Solo rendimiento y fallas",
       "Solo contabilidad y seguridad"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Las cinco áreas funcionales son: Administración de la Configuración, Administración de Rendimiento, Administración de Fallas, Administración de la Contabilidad y Administración de la Seguridad.",
     category: "Áreas Funcionales"
   },
@@ -184,11 +184,11 @@ export const questions: Question[] = [
     question: "¿Cuál es la meta de la actividad de planeación y diseño de la red?",
     options: [
       "Solo satisfacer requerimientos inmediatos",
-      "Satisfacer los requerimientos inmediatos y futuros de la red, reflejarlos en su diseño hasta llegar a su implementación",
       "Solo implementar la red",
-      "Solo diseñar la topología"
+      "Solo diseñar la topología",
+      "Satisfacer los requerimientos inmediatos y futuros de la red, reflejarlos en su diseño hasta llegar a su implementación"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "La meta es satisfacer los requerimientos inmediatos y futuros de la red, reflejarlos en su diseño hasta llegar a su implementación.",
     category: "Administración de Configuración"
   },
@@ -196,12 +196,12 @@ export const questions: Question[] = [
     id: 15,
     question: "¿Qué etapas contempla el proceso de planeación y diseño de una red?",
     options: [
-      "Solo diseñar la topología",
       "Reunir necesidades, diseñar topología, determinar infraestructura, diseñar distribución de tráfico y planear implementación",
+      "Solo diseñar la topología",
       "Solo instalar hardware",
       "Solo configurar software"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "El proceso contempla: reunir necesidades de la red, diseñar la topología, determinar y seleccionar infraestructura, diseñar distribución de tráfico y planear la implementación.",
     category: "Administración de Configuración"
   },
@@ -210,11 +210,11 @@ export const questions: Question[] = [
     question: "En un diseño jerárquico de red, ¿cuáles son las capas principales?",
     options: [
       "Solo acceso",
-      "Acceso, distribución y núcleo (core)",
       "Solo núcleo",
-      "Solo distribución"
+      "Solo distribución",
+      "Acceso, distribución y núcleo (core)"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "En un diseño jerárquico se tienen las capas de acceso, distribución y núcleo (core).",
     category: "Administración de Configuración"
   },
@@ -222,12 +222,12 @@ export const questions: Question[] = [
     id: 17,
     question: "¿Qué actividad es responsable de la instalación, desinstalación y actualización de aplicaciones en los dispositivos de red?",
     options: [
-      "Administración de hardware",
       "Administración de software",
+      "Administración de hardware",
       "Administración de seguridad",
       "Administración de rendimiento"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "La administración de software es responsable de la instalación, desinstalación y actualización de aplicaciones, sistemas operativos o funcionalidades en los dispositivos de la red.",
     category: "Administración de Configuración"
   },
@@ -236,11 +236,11 @@ export const questions: Question[] = [
     question: "¿Por qué es importante el respaldo frecuente de las configuraciones de los equipos de red?",
     options: [
       "Para ahorrar espacio",
-      "Para tener una copia cuando un equipo se daña y tiene que ser reemplazado, evitando reconfigurar desde cero",
       "Para mejorar el rendimiento",
-      "Para aumentar la seguridad"
+      "Para aumentar la seguridad",
+      "Para tener una copia cuando un equipo se daña y tiene que ser reemplazado, evitando reconfigurar desde cero"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Los respaldos son útiles cuando un equipo se daña y tiene que ser reemplazado, ya que no es necesario realizar la configuración nuevamente.",
     category: "Administración de Configuración"
   },
@@ -248,12 +248,12 @@ export const questions: Question[] = [
     id: 19,
     question: "¿Qué es la 'Provisión' en administración de redes?",
     options: [
-      "La eliminación de recursos",
       "La tarea que asegura la redundancia de los elementos de software y hardware más importantes de la red",
+      "La eliminación de recursos",
       "Solo la configuración inicial",
       "Solo el monitoreo"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "La provisión es la tarea que asegura la redundancia de los elementos de software y hardware más importantes de la red.",
     category: "Administración de Configuración"
   },
@@ -263,11 +263,11 @@ export const questions: Question[] = [
     question: "¿Cuál es el objetivo principal de la administración de rendimiento?",
     options: [
       "Eliminar todos los recursos",
-      "Mantener el nivel de rendimiento de la red en un nivel aceptable",
       "Solo monitorear la red",
-      "Solo configurar dispositivos"
+      "Solo configurar dispositivos",
+      "Mantener el nivel de rendimiento de la red en un nivel aceptable"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "El objetivo es mantener el rendimiento de la red en un nivel aceptable mediante el monitoreo y análisis de métricas de rendimiento.",
     category: "Administración de Rendimiento"
   },
@@ -275,12 +275,12 @@ export const questions: Question[] = [
     id: 21,
     question: "¿Qué métricas se monitorean típicamente en la administración de rendimiento?",
     options: [
-      "Solo el número de usuarios",
       "Utilización de ancho de banda, tiempo de respuesta, throughput, tasa de errores, disponibilidad",
+      "Solo el número de usuarios",
       "Solo la temperatura",
       "Solo el voltaje"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Se monitorean métricas como utilización de ancho de banda, tiempo de respuesta, throughput, tasa de errores y disponibilidad.",
     category: "Administración de Rendimiento"
   },
@@ -290,11 +290,11 @@ export const questions: Question[] = [
     question: "¿Cuál es el objetivo principal de la administración de fallas?",
     options: [
       "Prevenir todas las fallas",
-      "Detectar, aislar, notificar y corregir problemas operacionales en la red",
       "Solo notificar problemas",
+      "Detectar, aislar, notificar y corregir problemas operacionales en la red",
       "Solo corregir problemas"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "El objetivo es detectar, aislar, notificar y corregir problemas operacionales en la red de manera eficiente.",
     category: "Administración de Fallas"
   },
@@ -303,11 +303,11 @@ export const questions: Question[] = [
     question: "¿Qué es un 'ping' en el contexto de monitorización de redes?",
     options: [
       "Un protocolo de seguridad",
-      "Un datagrama de echo que produce una réplica inmediata cuando llega al destino, usado para verificar si un host está activo",
       "Un dispositivo de red",
-      "Un sistema operativo"
+      "Un sistema operativo",
+      "Un datagrama de echo que produce una réplica inmediata cuando llega al destino, usado para verificar si un host está activo"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "El pinging se basa en un datagrama de echo que produce una réplica inmediata cuando llega al destino. Si recibimos réplica, sabemos que el host está activo.",
     category: "Administración de Fallas"
   },
@@ -315,12 +315,12 @@ export const questions: Question[] = [
     id: 24,
     question: "¿Qué información se puede obtener mediante técnicas sofisticadas de monitorización?",
     options: [
-      "Solo si un host está activo",
       "Información estadística y del estado de varios dispositivos, cuenta de clases de datagramas y errores de varios tipos",
+      "Solo si un host está activo",
       "Solo la temperatura",
       "Solo el voltaje"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Las técnicas sofisticadas permiten conocer información estadística y del estado de varios dispositivos, llevar cuenta de clases de datagramas y errores de varios tipos.",
     category: "Administración de Fallas"
   },
@@ -330,11 +330,11 @@ export const questions: Question[] = [
     question: "¿Cuál es el objetivo de la administración de contabilidad?",
     options: [
       "Contar los dispositivos",
-      "Hacer seguimiento del uso de los recursos de la red por parte de los usuarios individuales o grupos",
       "Solo facturar",
-      "Solo registrar errores"
+      "Solo registrar errores",
+      "Hacer seguimiento del uso de los recursos de la red por parte de los usuarios individuales o grupos"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "El objetivo es hacer seguimiento del uso de los recursos de la red por parte de los usuarios individuales o grupos para fines de facturación, planificación de capacidad o auditoría.",
     category: "Administración de Contabilidad"
   },
@@ -343,12 +343,12 @@ export const questions: Question[] = [
     id: 26,
     question: "¿Cuál es el objetivo principal de la administración de seguridad?",
     options: [
-      "Eliminar todos los usuarios",
       "Controlar el acceso a los recursos de la red y proteger la información contra accesos no autorizados",
+      "Eliminar todos los usuarios",
       "Solo instalar firewalls",
       "Solo cambiar contraseñas"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "El objetivo es controlar el acceso a los recursos de la red y proteger la información contra accesos no autorizados.",
     category: "Administración de Seguridad"
   },
@@ -357,11 +357,11 @@ export const questions: Question[] = [
     question: "¿Cuál es el objetivo de la prevención de ataques?",
     options: [
       "Detectar ataques en curso",
-      "Mantener los recursos de red fuera del alcance de potenciales usuarios maliciosos",
       "Responder a ataques",
-      "Eliminar todos los usuarios"
+      "Eliminar todos los usuarios",
+      "Mantener los recursos de red fuera del alcance de potenciales usuarios maliciosos"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "El objetivo de la prevención es mantener los recursos de red fuera del alcance de potenciales usuarios maliciosos, por ejemplo mediante control de acceso.",
     category: "Administración de Seguridad"
   },
@@ -369,12 +369,12 @@ export const questions: Question[] = [
     id: 28,
     question: "¿Cuál es el objetivo de la detección de intrusos?",
     options: [
-      "Prevenir ataques",
       "Detectar el momento en que un ataque se está llevando a cabo",
+      "Prevenir ataques",
       "Responder a ataques",
       "Eliminar usuarios"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "El objetivo es detectar el momento en que un ataque se está llevando a cabo mediante sistemas de detección de intrusos que vigilan y registran el tráfico.",
     category: "Administración de Seguridad"
   },
@@ -383,11 +383,11 @@ export const questions: Question[] = [
     question: "¿Cuál es el objetivo de la respuesta a incidentes?",
     options: [
       "Prevenir ataques",
-      "Tomar medidas para conocer las causas de un compromiso de seguridad y tratar de eliminar dichas causas",
       "Solo detectar ataques",
-      "Solo notificar problemas"
+      "Solo notificar problemas",
+      "Tomar medidas para conocer las causas de un compromiso de seguridad y tratar de eliminar dichas causas"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "El objetivo es tomar las medidas necesarias para conocer las causas de un compromiso de seguridad cuando ha sido detectado, además de tratar de eliminar dichas causas.",
     category: "Administración de Seguridad"
   },
@@ -395,12 +395,12 @@ export const questions: Question[] = [
     id: 30,
     question: "¿Cuál es la meta principal de las políticas de seguridad?",
     options: [
-      "Eliminar usuarios",
       "Establecer los requerimientos recomendados para proteger adecuadamente la infraestructura de cómputo y la información",
+      "Eliminar usuarios",
       "Solo instalar software",
       "Solo configurar dispositivos"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "La meta principal es establecer los requerimientos recomendados para proteger adecuadamente la infraestructura de cómputo y la información ahí contenida.",
     category: "Administración de Seguridad"
   },
@@ -408,12 +408,12 @@ export const questions: Question[] = [
     id: 31,
     question: "¿Cuáles son las cinco clases de servicios de seguridad según la arquitectura OSI?",
     options: [
-      "Solo confidencialidad y autenticación",
       "Confidencialidad, Autenticación, Integridad, Control de acceso y No repudio",
+      "Solo confidencialidad y autenticación",
       "Solo integridad y control de acceso",
       "Solo no repudio"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "La arquitectura de seguridad OSI identifica cinco clases: Confidencialidad, Autenticación, Integridad, Control de acceso y No repudio.",
     category: "Administración de Seguridad"
   },
@@ -422,11 +422,11 @@ export const questions: Question[] = [
     question: "¿Qué significa TACACS?",
     options: [
       "Terminal Access Control System",
-      "Terminal Access Controller Access Control System",
       "Total Access Control System",
-      "Technical Access Control System"
+      "Technical Access Control System",
+      "Terminal Access Controller Access Control System"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "TACACS (Terminal Access Controller Access Control System) permite a un servidor de acceso remoto comunicarse con un servidor de autenticación para determinar si el usuario tiene acceso a la red.",
     category: "Administración de Seguridad"
   },
@@ -435,11 +435,11 @@ export const questions: Question[] = [
     question: "¿Qué significa RADIUS?",
     options: [
       "Remote Access Dial-In User System",
-      "Remote Authentication Dial-In User Service",
       "Remote Access Data Integration User Service",
+      "Remote Authentication Dial-In User Service",
       "Remote Authentication Data Integration User System"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "RADIUS (Remote Authentication Dial-In User Service) se caracteriza por la administración centralizada de autenticación.",
     category: "Administración de Seguridad"
   },
@@ -447,12 +447,12 @@ export const questions: Question[] = [
     id: 34,
     question: "¿Qué es IPSec?",
     options: [
-      "Un sistema operativo",
       "Un conjunto de protocolos cuya función es asegurar las comunicaciones sobre IP autenticando y/o cifrando cada paquete",
+      "Un sistema operativo",
       "Un dispositivo de red",
       "Un protocolo de routing"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "IPSec (Internet Protocol security) es un conjunto de protocolos cuya función es asegurar las comunicaciones sobre IP autenticando y/o cifrando cada paquete en un flujo de datos.",
     category: "Administración de Seguridad"
   },
@@ -461,11 +461,11 @@ export const questions: Question[] = [
     question: "¿Qué es MD5?",
     options: [
       "Un protocolo de red",
-      "Un algoritmo de reducción criptográfico de 128 bits ampliamente usado",
       "Un dispositivo de red",
-      "Un sistema operativo"
+      "Un sistema operativo",
+      "Un algoritmo de reducción criptográfico de 128 bits ampliamente usado"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "MD5 (Message-Digest Algorithm 5) es un algoritmo de reducción criptográfico de 128 bits ampliamente usado para verificar integridad.",
     category: "Administración de Seguridad"
   },
@@ -473,12 +473,12 @@ export const questions: Question[] = [
     id: 36,
     question: "¿Cuáles son ejemplos de mecanismos de seguridad mencionados en el documento?",
     options: [
-      "Solo firewalls",
       "Herramientas de control de acceso, cortafuegos (firewall), TACACS o RADIUS, Secure Shell, IPSec, MD5",
+      "Solo firewalls",
       "Solo TACACS",
       "Solo RADIUS"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Los mecanismos incluyen herramientas de control de acceso, cortafuegos, TACACS o RADIUS, mecanismos para acceso remoto como Secure Shell o IPSec, y mecanismos de integridad como MD5.",
     category: "Administración de Seguridad"
   },
@@ -488,11 +488,11 @@ export const questions: Question[] = [
     question: "¿Qué significa SNMP?",
     options: [
       "Simple Network Monitoring Protocol",
-      "Simple Network Management Protocol",
       "System Network Management Protocol",
-      "Secure Network Management Protocol"
+      "Secure Network Management Protocol",
+      "Simple Network Management Protocol"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "SNMP (Simple Network Management Protocol) permite recoger información crítica de la red de una forma estandarizada.",
     category: "Protocolos y Herramientas"
   },
@@ -500,12 +500,12 @@ export const questions: Question[] = [
     id: 38,
     question: "¿Qué es una plataforma de monitorización?",
     options: [
-      "Un dispositivo físico",
       "Un conjunto de módulos software que ofrecen servicios e incorporan una interfaz gráfica de usuario para realizar tareas comunes",
+      "Un dispositivo físico",
       "Solo un protocolo",
       "Solo un sistema operativo"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Una plataforma de monitorización es un conjunto de módulos software que ofrecen servicios e incorporan una interfaz gráfica de usuario que permite realizar las tareas más comunes.",
     category: "Protocolos y Herramientas"
   },
@@ -514,11 +514,11 @@ export const questions: Question[] = [
     question: "¿Qué es un datagrama IP?",
     options: [
       "Un protocolo de seguridad",
-      "Las unidades principales de información de Internet, con una cabecera que contiene información de direcciones de la capa de red",
       "Un dispositivo de red",
+      "Las unidades principales de información de Internet, con una cabecera que contiene información de direcciones de la capa de red",
       "Un sistema operativo"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Los datagramas IP son las unidades principales de información de Internet. Un datagrama tiene una cabecera que contiene información de direcciones de la capa de red.",
     category: "Protocolos y Herramientas"
   },
@@ -526,12 +526,12 @@ export const questions: Question[] = [
     id: 40,
     question: "¿Qué hace la interfaz de usuario en NNM (Network Node Manager)?",
     options: [
-      "Solo monitorea dispositivos",
       "Presenta la información de la red, eventos y alarmas, y tiene procesos en segundo plano para monitorizar el estado y mantener la base de datos",
+      "Solo monitorea dispositivos",
       "Solo configura dispositivos",
       "Solo instala software"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "La interfaz de usuario presenta la información de la red, eventos y alarmas, y tiene procesos en segundo plano para monitorizar el estado y configuración de los nodos y mantener la base de datos.",
     category: "Protocolos y Herramientas"
   },
@@ -540,11 +540,11 @@ export const questions: Question[] = [
     question: "¿Qué tipos de redes se mencionan en el documento como parte de la complejidad de administración?",
     options: [
       "Solo LAN",
-      "LAN, MAN y WAN",
       "Solo WAN",
-      "Solo MAN"
+      "Solo MAN",
+      "LAN, MAN y WAN"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "El documento menciona la interconexión de diferentes tipos de redes LAN, MAN y WAN como parte de la complejidad de administración.",
     category: "Conceptos Generales"
   },
@@ -552,12 +552,12 @@ export const questions: Question[] = [
     id: 42,
     question: "¿Qué medios de comunicación se mencionan en el documento?",
     options: [
-      "Solo par trenzado",
       "Par trenzado, cable coaxial, fibra óptica, satelital, microondas",
+      "Solo par trenzado",
       "Solo fibra óptica",
       "Solo cable coaxial"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Se mencionan múltiples medios de comunicación: par trenzado, cable coaxial, fibra óptica, satelital y microondas.",
     category: "Conceptos Generales"
   },
@@ -566,11 +566,11 @@ export const questions: Question[] = [
     question: "¿Qué protocolos de comunicación se mencionan en el documento?",
     options: [
       "Solo TCP/IP",
-      "TCP/IP, SPX/IPX, SNA",
       "Solo SPX/IPX",
-      "Solo SNA"
+      "Solo SNA",
+      "TCP/IP, SPX/IPX, SNA"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Se mencionan diversos protocolos de comunicación incluyendo TCP/IP, SPX/IPX y SNA.",
     category: "Conceptos Generales"
   },
